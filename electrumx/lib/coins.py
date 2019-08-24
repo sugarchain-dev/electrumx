@@ -3147,3 +3147,21 @@ class CPUchain(Coin):
         '''Given a header return the hash.'''
         import cpupower
         return cpupower.getPoWHash(header)
+
+class Sugarchain(Coin):
+    NAME = "Sugarchain"
+    SHORTNAME = "SUGAR"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("3F")
+    P2SH_VERBYTES = [bytes.fromhex("7D")]
+    WIF_BYTE = bytes.fromhex("80")
+    GENESIS_HASH = ('b8a83b1f579c06911c120932f06f0eab'
+                    'b857ef7f3366b3096b589769ef8d3e14')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 13486
+    TX_COUNT_HEIGHT = 13110
+    TX_PER_BLOCK = 2
+    RPC_PORT = 34229
+    REORG_LIMIT = 1000
