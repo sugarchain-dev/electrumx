@@ -3157,8 +3157,8 @@ class Sugarchain(Coin):
     P2PKH_VERBYTE = bytes.fromhex("3F")
     P2SH_VERBYTES = [bytes.fromhex("7D")]
     WIF_BYTE = bytes.fromhex("80")
-    GENESIS_HASH = ('b8a83b1f579c06911c120932f06f0eab'
-                    'b857ef7f3366b3096b589769ef8d3e14')
+    GENESIS_HASH = ('7d5eaec2dbb75f99feadfa524c78b7ca'
+                    'bc1d8c8204f79d4f3a83381b811b0adc')
     DESERIALIZER = lib_tx.DeserializerSegWit
     TX_COUNT = 13486
     TX_COUNT_HEIGHT = 13110
