@@ -3811,3 +3811,20 @@ class Sugarchain(Coin):
     TX_PER_BLOCK = 2
     RPC_PORT = 34229
     REORG_LIMIT = 1000
+
+class SugarchainTestnet(Sugarchain):
+    SHORTNAME = "TUGAR"
+    NET = "testnet"
+    XPUB_VERBYTES = bytes.fromhex("043587cf")
+    XPRV_VERBYTES = bytes.fromhex("04358394")
+    P2PKH_VERBYTE = bytes.fromhex("42")
+    P2SH_VERBYTES = [bytes.fromhex("80")]
+    WIF_BYTE = bytes.fromhex("ef")
+    GENESIS_HASH = ('e0e0e42e493ba7b15f7b0fe1a7e66f73'
+                    'b7fd8b3e6e6a7b0e821a6b95040d3826')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 52944
+    TX_COUNT_HEIGHT = 56944
+    TX_PER_BLOCK = 1
+    RPC_PORT = 44229
+    REORG_LIMIT = 1000
