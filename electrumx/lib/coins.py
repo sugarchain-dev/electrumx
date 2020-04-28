@@ -3794,6 +3794,7 @@ class Quebecoin(AuxPowMixin, Coin):
     REORG_LIMIT = 2000
     RPC_PORT = 10890
 
+
 class Sugarchain(Coin):
     NAME = "Sugarchain"
     SHORTNAME = "SUGAR"
@@ -3811,6 +3812,7 @@ class Sugarchain(Coin):
     TX_PER_BLOCK = 2
     RPC_PORT = 34229
     REORG_LIMIT = 1000
+
 
 class SugarchainTestnet(Sugarchain):
     SHORTNAME = "TUGAR"
